@@ -615,11 +615,6 @@ class Wave(object):
         """
         self.ys *= numpy.hamming(len(self.ys))
 
-    def kaiser(self, beta):
-        """Apply the Kaiser window to the wave.
-        """
-        self.ys *= numpy.kaiser(len(self.ys), beta)
-
     def window(self, window):
         """Apply a window to the wave.
 
